@@ -1,0 +1,125 @@
+body {
+	background-color:RGB(255, 238, 204);
+ 	font-family:Arial, Halventica , San-Serif;
+ 	color: black;
+}
+#wrapper { 
+    width: 960px; 
+    margin: 0 auto; 
+} 
+header h1 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 	float: left; 
+ 	font-weight: bold;    
+    font-size: 2em;  
+	color: red;				
+} 
+nav { 
+	padding:1% 1% 1% 1%;
+	padding-right:50px;
+	padding-bottom: 50px;
+    float:right; 
+    text-align:right; 
+} 
+nav li{
+	width:120px; 
+	float :left;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav a{ 
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 1% 1% 1% 1%;
+	margin: 2% 2% 2% 2%;
+	color: rgb(34, 16, 83);
+	font-size: 1em;
+	background-color: rgba(235, 181, 137, 0.671);
+	position: relative;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	border-radius: 30px;
+} 
+nav a:hover{ 
+	text-decoration:underline 
+} 
+
+#page_title{ 
+    width:100%; 
+    margin: 5px;
+    border-bottom: 4px  solid #c9c9c9; 
+	clear:both;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.25em
+} 
+.article_list article {
+    float:left; 
+    width: 303px;
+    margin-right:25px;
+}
+.article_list article.last{
+	margin-right:0;
+}
+.article_img{
+	position:relative;
+	height:231px;
+	width :303px;
+}
+.caption{
+ 	position:absolute;
+ 	bottom:0;
+ 	right:0;
+ 	left:0;
+ 	height:22px;
+ 	color:white;
+ 	background: rgba(0,0,0,0.6);
+}
+.text p{
+	text-align: justify;
+	line-height:1.5;
+	font-size:0.75em;
+}
+#pg_title{
+ 	margin-top: 400px;
+    border-bottom: 4px  solid #c9c9c9; 
+ 	clear:both;
+    width: 725px;
+}
+.loader{
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader  > img{
+	width: 300px;
+}
+.loader.hidden{
+	animation: fadeOut 1.5s;
+	animation-fill-mode: forwards; 
+}
+@keyframes fadeOut{
+	100%{
+	opacity: 0;
+	visibility: hidden;
+}
+img#logodown{
+	top: 0;
+	right: 0;
+	position: fixed;
+	padding: 20px;
+	z-index: 55;
+	border-radius: 50%;
+	width:6%;
+	opacity: 0.7;
+	}
