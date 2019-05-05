@@ -33,17 +33,17 @@ header h1 {
  	float: left; 
  	font-weight: bold;    
     font-size: 2em;  
-	color: black;
+	color: red;				
 } 
 nav { 
 	padding:1% 1% 1% 1%;
 	padding-right:50px;
 	padding-bottom: 50px;
-    float:right; 
+    float:center; 
     text-align:right; 
 } 
 nav li{
-	width:120px; 
+	width:128px; 
 	float :left;
 }
 nav ul {
@@ -52,10 +52,11 @@ nav ul {
   padding: 0;
 }
 nav a{ 
+	text-transform: uppercase;
 	display: block;
 	text-align: center;
 	text-decoration: none;
-	/*padding: 1% 1% 1% 1%;*/
+	padding: 1% 1% 1% 1%;
 	margin: 2% 2% 2% 2%;
 	color: rgb(34, 16, 83);
 	font-size: 1em;

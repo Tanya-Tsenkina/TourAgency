@@ -18,11 +18,11 @@ nav {
 	padding:1% 1% 1% 1%;
 	padding-right:50px;
 	padding-bottom: 50px;
-    float:right; 
+    float:center; 
     text-align:right; 
 } 
 nav li{
-	width:120px; 
+	width:128px; 
 	float :left;
 }
 nav ul {

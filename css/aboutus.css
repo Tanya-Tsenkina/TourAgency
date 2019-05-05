@@ -1,7 +1,7 @@
 body {
 	background-color:RGB(255, 238, 204);
- 	font-family:Arial, Halventica , San-Serif;
  	color: black;
+	font-family:Arial, Halventica , San-Serif; 
 }
 #wrapper { 
     width: 960px; 
@@ -18,11 +18,11 @@ nav {
 	padding:1% 1% 1% 1%;
 	padding-right:50px;
 	padding-bottom: 50px;
-    float:right; 
+    float:center; 
     text-align:right; 
 } 
 nav li{
-	width:120px; 
+	width:128px; 
 	float :left;
 }
 nav ul {
@@ -51,12 +51,12 @@ nav a:hover{
 #content{
 	float:left;
 	width: 900px;
-	padding: 10px;
-	padding-bottom:40px; 
+	padding-bottom: 40px; 
+	font-family:Arial, Halventica , San-Serif;
 	}
 #content p{
     text-align: justify;
-    font-size: 1em;
+    font-size: 1em;	
 }
 
 div.gallery {
