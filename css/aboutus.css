@@ -11,43 +11,8 @@ header h1 {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  	float: left; 
  	font-weight: bold;    
-    font-size: 2em;  
-	color: red;				
+    font-size: 2em;			
 } 
-nav { 
-	padding:1% 1% 1% 1%;
-	padding-right:50px;
-	padding-bottom: 50px;
-    float:center; 
-    text-align:right; 
-} 
-nav li{
-	width:128px; 
-	float :left;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-nav a{ 
-	text-transform: uppercase;
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	padding: 1% 1% 1% 1%;
-	margin: 2% 2% 2% 2%;
-	color: rgb(34, 16, 83);
-	font-size: 1em;
-	background-color: rgba(235, 181, 137, 0.671);
-	position: relative;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	border-radius: 30px;
-} 
-nav a:hover{ 
-	text-decoration:underline 
-} 
-
 #content{
 	float:left;
 	width: 900px;
@@ -60,7 +25,7 @@ nav a:hover{
 }
 
 div.gallery {
-  margin-left: 40px;
+  margin-left: 30px;
   border: 1px solid #ccc;
   float: left;
   width: 180px;
@@ -78,4 +43,8 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+strong
+{
+	color:rgb(235, 181, 137);
 }
