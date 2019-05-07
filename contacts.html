@@ -1,47 +1,115 @@
-<!--<!DOCTYPE html>
-<html>
-<head>
-<title>Contact Form using JavaScript</title> 
-<link href="css/contacts.css" rel="stylesheet">
-</head>
-<body>
-<div id="main">
-<h1>Contact Form using JavaScript</h1>
-<div id="form_sample"></div> 
-<script src="js/contacts.js"></script>
-</div>
-</body>
-</html>-->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>FeedBack Form With Email Functionality</title>
-<link href="css/contacts.css" rel="stylesheet">
+	<title>Contact V13</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/contacts.css">
+<!--===============================================================================================-->
 </head>
-<!-- Body Starts Here -->
 <body>
-<div class="container">
-<!-- Feedback Form Starts Here -->
-<div id="feedback">
-<!-- Heading Of The Form -->
-<div class="head">
-<h3>FeedBack Form</h3>
-<p>This is feedback form. Send us your feedback !</p>
-</div>
-<!-- Feedback Form -->
-<form action="#" id="form" method="post" name="form">
-<input name="vname" placeholder="Your Name" type="text" value="">
-<input name="vemail" placeholder="Your Email" type="text" value="">
-<input name="sub" placeholder="Subject" type="text" value="">
-<label>Your Suggestion/Feedback</label>
-<textarea name="msg" placeholder="Type your text here..."></textarea>
-<input id="send" name="submit" type="submit" value="Send Feedback">
-</form>
-<h3><?php include "secure_email_code.php"?></h3>
-</div>
-<!-- Feedback Form Ends Here -->
-</div>
+
+
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="42.6808556" data-map-y="23.3111091" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Свържете се с нас
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Име:</span>
+					<input class="input100" type="text" name="name" placeholder="Име...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Email addess...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100">
+					<span class="label-input100">Телефон</span>
+					<input class="input100" type="text" name="phone" placeholder="Телефонен номер...">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Съобщение</span>
+					<textarea class="input100" name="message" placeholder="Въпроси/Коментари..."></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn">
+							Send
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
 </body>
-<!-- Body Ends Here -->
 </html>
