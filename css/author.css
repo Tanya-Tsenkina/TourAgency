@@ -16,8 +16,8 @@ header h1 {
 } 
 #content{
 	float:left;
-	margin:0px 40px 40px 50px;
-	width: 900px;
+
+	width: 960px;
 	height: 00px;
 	padding: 10px;
 	padding-bottom:80px; 
@@ -53,7 +53,7 @@ header h1 {
 	padding: 10px;
 	margin: 5px;
 }
-#info img {
+#author{
     height: 440px;
     float: right;
     margin: 20px;

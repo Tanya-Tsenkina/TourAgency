@@ -36,7 +36,7 @@
 		<div class="contact100-map" id="google_map" data-map-x="42.6808556" data-map-y="23.3111091" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" method="post" action="php/addguestbook.php">
 				<span class="contact100-form-title">
 					Свържете се с нас
 				</span>
@@ -55,13 +55,13 @@
 
 				<div class="wrap-input100">
 					<span class="label-input100">Телефон</span>
-					<input class="input100" type="text" name="phone" placeholder="Телефонен номер...">
+					<input class="input100" type="text" name="telephone" placeholder="Телефонен номер...">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+				<div class="wrap-input100 validate-input" data-validate="Message is required">
 					<span class="label-input100">Съобщение</span>
-					<textarea class="input100" name="message" placeholder="Въпроси/Коментари..."></textarea>
+					<textarea class="input100" name="comment" placeholder="Въпроси/Коментари..."></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -71,6 +71,7 @@
 						<button class="contact100-form-btn">
 							Send
 						</button>
+						<a href="php/viewguestbook.php">Разгледайте книгата за гости</a>
 					</div>
 				</div>
 			</form>
