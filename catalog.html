@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/catalog.css" type="text/css">
 		<link rel="stylesheet" href="css/nav.css" type="text/css">
 		<title>Globus Tours</title> 
@@ -19,32 +20,107 @@
 						<li><a href="contacts.html">КОНТАКТИ</a></li>
 					</ul>
 				</nav> 
-				<h1> Каталаг</h1> 
+				<h1> Каталог</h1> 
 			</header> 
-			<div id="content">
-				
+			
+			<div class="loader">
+				<img src="spiner.svg" alt="Loading...">
+			</div>
+			<script type="text/javascript">
+				window.addEventListener("load", function(){
+				const loader = document.querySelector(".loader");
+				loader.className += " hidden";
+				})
+			</script>
+			<div id="content">				
 				<table>
-				<tr>
-				<th>Каталожен номер</th>
-				<th>Наименование</th>
-				<th>Цена</th>
-				<th>Снимка</th>
-				</tr>
-				<tr>
-				<td colspan="4" >България </td>
-				</tr>
-				<tr>
-				<td>Joyce Ming</td>
-				<td>$200</td>
-				<td>$35</td>
-				<td>Andy</td>
-				</tr>
-				<tr>
-				<td>James A. Pentel</td>
-				<td>$175</td>
-				<td>$25</td>
-				<td>Annie</td>
-				</tr>
+					<tr>
+						<th>Каталожен номер</th>
+						<th>Наименование</th>
+						<th>Цена за нощувка на човек</th>
+						<th>Снимка</th>
+					</tr>
+					<tr>
+						<td colspan="4" align="center" style="font-size:18px;"><strong><a href="#Bulgaria">България </a></strong></td>
+					</tr>
+					<tr>
+						<td>BG0001 <a name="Bulgaria"></a> </td>
+						<td>Велико Търново</td>
+						<td>30 лв.</td>
+						<td><img src="images/katalog/velikoturnovo.jpg" alt="velikoturnovo" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>BG0002</td>
+						<td>Велинград</td>
+						<td>35 лв.</td>
+						<td><img src="images/katalog/velingrad.jpg" alt="velingrad" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>BG0003</td>
+						<td>Несебър</td>
+						<td>40 лв.</td>
+						<td><img src="images/katalog/nesebur.jpg" alt="nesebur" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>BG0004</td>
+						<td>Банско</td>
+						<td>70 лв.</td>
+						<td><img src="images/katalog/bansko.jpg" alt="bansko" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td colspan="4" align="center" style="font-size:18px;"><strong><a href="#Europe"> Европа </a></strong></td>
+					</tr>
+					<tr>
+						<td>EU0001<a name="Europe"></a></td>
+						<td>Париж</td>
+						<td>200 лв.</td>
+						<td><img src="images/katalog/parij.jpg" alt="parij" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>EU0002</td>
+						<td>Рим</td>
+						<td>250 лв.</td>
+						<td><img src="images/katalog/rim.jpg" alt="rim" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>EU0003</td>
+						<td>Лондон</td>
+						<td>250 лв.</td>
+						<td><img src="images/katalog/london.jpg" alt="london" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>EU0004</td>
+						<td>Барселона</td>
+						<td>300 лв.</td>
+						<td><img src="images/katalog/barcelona.jpg" alt="barcelona" width="400" height="250" /></td>
+					</tr>										
+					<tr>
+						<td colspan="4" align="center" style="font-size:18px;"><strong><a href="#USA">Съединени американски щати </a> </strong></td>
+					<tr>
+						<td>USA001 <a name="USA"></a></td>
+						<td>Вашингтон</td>
+						<td>300 лв.</td>
+						<td><img src="images/katalog/vashington.jpg" alt="vashington" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>USA002</td>
+						<td>Ню Йорк</td>
+						<td>320 лв.</td>
+						<td><img src="images/katalog/nyc.jpg" alt="nyc" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>USA003</td>
+						<td>Калифорния</td>
+						<td>250 лв.</td>
+						<td><img src="images/katalog/california.jpg" alt="california" width="400" height="250" /></td>
+					</tr>
+					<tr>
+						<td>USA004</td>
+						<td>Лас вегас</td>
+						<td>180 лв.</td>
+						<td><img src="images/katalog/lasvegas.jpg" alt="lasvegas" width="400" height="250" /></td>
+					</tr>
+					</tr>
 				</table>
 			</div>
       </div>

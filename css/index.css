@@ -1,3 +1,11 @@
+ body{
+	margin: auto;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
+	font-family: Arial, Halventica, San-Serif; 
+} 
  ul {
     list-style-type: none;
     margin: 0rem;
@@ -35,13 +43,6 @@ li a:hover {
     color: white;
     font-weight: bold; 
     position: relative;
-	} 
-body{
-	margin: auto;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%; 
 	}  
 img#logodown{
 	top: 0;
@@ -64,8 +65,8 @@ img#logodown{
 	float: left;
 	margin-top: 2%;
 	font-size: 1.2rem;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	align-content: right;
+	padding:10px;
 	}
 .center {
 	position: fixed;
@@ -76,7 +77,7 @@ img#logodown{
 	margin: 0 auto;
 	border: 4px outset  rgb(34, 16, 83);
 	padding: 1%;
-	margin-left: 149%;
+	margin-left: 154%;
 	margin-top: 88%;
 	}
 .loader{
